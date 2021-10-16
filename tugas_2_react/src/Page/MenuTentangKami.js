@@ -1,10 +1,17 @@
 import React, {Component} from "react";
 
 class MenuTentangKami extends Component{
+constructor(props){
+  super(props);
+  this.state = {
+    tentang: this.props.tentang
+  };
+}
+
   render(){
-    return(
+    return(      
       <div>
-          <p>Ini Halaman Menu Tentang Kami</p>
+          <p>Tentang kami</p> {this.props.tentang}
       </div>
     );
   }

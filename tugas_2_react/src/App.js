@@ -1,24 +1,10 @@
 import React, {Component} from "react";
-import MenuKontak from "./Page/MenuKontak";
-import MenuProduct from "./Page/MenuProduct";
-import MenuTentangKami from "./Page/MenuTentangKami";
+import Header from "./Page/Header";
 import MenuUtama from "./Page/MenuUtama";
-
-const Header = () =>{
-  return(
-    <div>
-        <h2>Ini Halaman Untuk Header</h2>
-    </div>
-  );
-};
-
-const Footer = () =>{
-  return(
-    <div>
-        <h2>Ini Halaman Untuk Footer</h2>
-    </div>
-  );
-};
+import MenuMakanan from "./Page/MenuMakanan";
+import MenuTentangKami from "./Page/MenuTentangKami";
+import MenuKontak from "./Page/MenuKontak";
+import Footer from"./Page/Footer";
 
 class App extends Component{
   render(){
@@ -26,9 +12,16 @@ class App extends Component{
       <div>
         <Header/>        
         <MenuUtama/>
-        <MenuProduct/>
-        <MenuKontak/>
-        <MenuTentangKami/>
+        <MenuMakanan/>
+
+        <center>
+        <MenuTentangKami tentang="Warung nusantara Adalah Restoran Yang Bernuansa Makanan Nusantara,
+        Kami Ada Untuk Anda Membuat Anda Menikmati Makanan Khas Nusantara"/>        
+        <p><h4>Jl. Swadaya IV, Pd.Ranggon, Cipayung, Kota Jakarta Timur, 
+        Daerah Khusus Ibukota Jakarta 13860"</h4></p>
+        </center>
+
+        <MenuKontak kontak="081312345678"/>
         <Footer/>
       </div>
     );
